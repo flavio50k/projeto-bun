@@ -7,10 +7,32 @@
 ## Status
 
 - [x] WSL 2 instalado e configurado
-- [ ] Docker instalado
-- [ ] Bun instalado
-- [ ] VSCode conectado
+- [x] Docker instalado
+- [x] Bun instalado
+- [x] VSCode conectado
 
-## Próximos passos
+🚀 Curso completo de desenvolvimento fullstack usando tecnologias modernas.
 
-Continuar com Módulo 1.2 - Git Workflow
+## Stack
+
+- **Runtime:** Bun.js
+- **Backend:** Elysia
+- **Frontend:** Vue 3
+- **Database:** PostgreSQL + Drizzle ORM
+- **AI:** OpenAI API + Ollama + Qdrant
+- **DevOps:** Docker + GitHub Actions
+
+## Estrutura
+```
+projeto-bun/
+├── apps/
+│   ├── backend/    # API Elysia
+│   └── frontend/   # Vue 3 App
+├── packages/       # Código compartilhado
+└── docker/         # Containers
+```
+
+## Autor
+
+**Flávio Luiz Bé**  
+GitHub: [@flavio50k](https://github.com/flavio50k)
