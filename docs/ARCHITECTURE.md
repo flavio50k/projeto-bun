@@ -65,3 +65,4 @@ projeto-bun/
 3. **Testabilidade:** Código facilmente testável
 4. **Observabilidade:** Logs, métricas e tracing desde o início
 5. **Containerização:** Docker para consistência entre ambientes
+
