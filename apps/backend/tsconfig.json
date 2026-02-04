@@ -1,0 +1,63 @@
+{
+  "compilerOptions": {
+    // Language and Environment
+    "target": "ESNext",                          // Usa features JS mais recentes
+    "lib": ["ESNext"],                           // APIs disponíveis
+    "module": "ESNext",                          // Sistema de módulos
+    "moduleResolution": "bundler",               // Resolução Bun-style
+    "jsx": "react-jsx",                          // Suporte JSX (Vue future)
+    
+    // Type Checking (STRICT MODE - Máxima segurança)
+    "strict": true,                              // Ativa TODOS os checks abaixo
+    "noImplicitAny": true,                       // Proíbe 'any' implícito
+    "strictNullChecks": true,                    // null/undefined são tipos separados
+    "strictFunctionTypes": true,                 // Funções devem ter tipos exatos
+    "strictBindCallApply": true,                 // bind/call/apply type-safe
+    "strictPropertyInitialization": true,        // Props de classe devem ser inicializadas
+    "noImplicitThis": true,                      // 'this' deve ter tipo explícito
+    "alwaysStrict": true,                        // Emite "use strict"
+    
+    // Additional Checks (Qualidade extra)
+    "noUnusedLocals": true,                      // Erro em variáveis não usadas
+    "noUnusedParameters": true,                  // Erro em parâmetros não usados
+    "noImplicitReturns": true,                   // Funções devem retornar em todos os caminhos
+    "noFallthroughCasesInSwitch": true,          // Switch cases devem ter break
+    "noUncheckedIndexedAccess": true,            // Acesso a arrays retorna T | undefined
+    
+    // Module Resolution
+    "allowImportingTsExtensions": true,          // Permite importar .ts
+    "moduleDetection": "force",                  // Força detecção de módulos
+    "resolveJsonModule": true,                   // Importar arquivos JSON
+    "allowSyntheticDefaultImports": true,        // Import padrão de CommonJS
+    "esModuleInterop": true,                     // Interop CommonJS/ES Modules
+    
+    // Emit
+    "noEmit": true,                              // Bun compila, não precisa emitir
+    "declaration": false,                        // Não gerar .d.ts (por enquanto)
+    "sourceMap": true,                           // Mapas para debug
+    
+    // Other
+    "skipLibCheck": true,                        // Não checar tipos de node_modules
+    "forceConsistentCasingInFileNames": true,    // Sensível a maiúsculas/minúsculas
+    "composite": true,                           // Suporte monorepo
+    "allowJs": true,                             // Permite arquivos .js
+    
+    // Paths (para imports absolutos futuros)
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    
+    // Types
+    "types": ["bun-types"]
+  },
+  
+  // Include/Exclude
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
